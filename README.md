@@ -4,7 +4,8 @@ KoBERT multi-label VOC classifier
 <br/>
 
 
-**[TL-DR]** KoBERT를 사용한 PyTorch text multi-label classification 모델입니다. SKT에서 공개한 한국어 pretrain embedding model인 [KoBERT](https://github.com/SKTBrain/KoBERT)를 사용했습니다.  
+**[TL-DR]**   
+KoBERT를 사용한 PyTorch text multi-label classification 모델입니다. SKT에서 공개한 한국어 pretrain embedding model인 [KoBERT](https://github.com/SKTBrain/KoBERT)를 사용했습니다.  
 
 ----
 
@@ -13,15 +14,15 @@ KoBERT multi-label VOC classifier
 Contents
 --------
 
-1.	[Intro]()
-2.	[Structure]()
-3.	[embedding visualization]()
-4.  [XAI using PyTorch Captum]()
-5.  [Streamlit Demo]()
+1.	[Intro](#intro)
+2.	[Structure](#structure)
+3.	[Embedding Visualization](#embedding)
+4.  [XAI using PyTorch Captum](#captum)
+5.  [Streamlit Demo](#demo)
 
 <br>
 
-
+<a id="intro"></a>
 ## Intro
 
 큰 기업에서는 매일 수 천건, 통화로 생성되는 STT 결과 데이터를 포함하면 수 만건에 달하는 VoC(Voice of Customers)가 발생합니다. 이 때 고객의 불만 사항을 실시간으로 분류/관리하여 트렌드를 추적해주는 시스템이 있다면, 운영 부서에서 미처 예상치 못한 서비스 장애를 진단하여 조기에 대응할 수도 있고, 나아가 고객 불만을 보상하는 프로모션을 제공한다면 고객 이탈을 방지함과 동시에 세일즈 KPI에 직접적인 효과를 얻을 수 있겠죠. 이러한 맥락에서 고안된 VOC 자동 분류 모델입니다.  
@@ -30,7 +31,7 @@ Contents
 
 
 <br>
-
+<a id="structure"></a>
 ## Structure
 
 
@@ -50,7 +51,8 @@ Contents
 └── weights                                       # 학습 모델 가중치
 ```
 
-Python 3.7.11 버전에서 구현되었습니다.  
+Python 3.7.11 버전에서 구현되었습니다. conda 가상환경을 권장합니다. 사용 패키지는 requirements.txt를 참조해주세요.  
+
 
 
 ### Model Performance  
@@ -67,6 +69,8 @@ Python 3.7.11 버전에서 구현되었습니다.
 
 <br>
 
+
+<a id="embedding"></a>
 ### Embedding visualization  
 
 
@@ -103,7 +107,7 @@ Python 3.7.11 버전에서 구현되었습니다.
 
 
 
-
+<a id="captum"></a>
 ### XAI using pytorch Captum   
 
 
@@ -120,7 +124,7 @@ Python 3.7.11 버전에서 구현되었습니다.
 
 
 
-
+<a id="demo"></a>
 ### Streamlit Demo  
 
 [streamlit](https://streamlit.io/)은 웹/앱 개발에 익숙치 않은 데이터 사이언티스트들이 손쉽게 웹앱 데모를 구현할 수 있도록 도와주는 high-level data app 라이브러리입니다. 입출력을 현업에게 빠르게 보여주기 위해 다음과 같은 데모를 만들었습니다. 불과 몇 분의 투자로 모델의 I/O를 보여줄 수 있는 매우 간편한 기능을 제공합니다.  
