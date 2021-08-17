@@ -1,8 +1,6 @@
 KoBERT multi-label VOC classifier
 ==============================================
 
-<center><img src="/asset/dgl_logo.png" align="center" alt="drawing" width="300"/></center>    
-
 <br/>
 
 
@@ -51,6 +49,9 @@ Contents
 │   └── preprocess.py                             # 전처리 모듈
 └── weights                                       # 학습 모델 가중치
 ```
+
+Python 3.7.11 버전에서 구현되었습니다.  
+
 
 ### Model Performance  
 
