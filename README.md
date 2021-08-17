@@ -93,7 +93,7 @@ Contents
 <center><img src="/img/seperated.png" align="center" alt="drawing" width="500"/></center>    
 <br/>  
 
-예쁘게 잘 정리 됐네요. 이와 같은 결과가 말해주듯이, 데이터셋을 수작업으로 레이블링할 때 모델이 혼동하지 않는 기준을 세우는 것이 중요하다는 결론을 내릴 수 있었습니다. 아래는 수정 후 모델의 confusion matrix입니다. 85/15로 stratified sampling을 해 주었습니다.  
+예쁘게 잘 정리 됐네요. 이와 같은 결과가 말해주듯이, 데이터셋을 수작업으로 레이블링할 때 모델이 혼동하지 않는 기준을 세우는 것이 중요하다는 결론을 내릴 수 있었습니다. 아래는 수정 후 모델의 confusion matrix입니다. 85:15로 stratified sampling을 해 주었습니다.  
 
 
 <br>
@@ -114,8 +114,7 @@ Contents
 <center><img src="/img/captum_example.png" align="center" alt="drawing" width="400"/></center>    
 <br/>
 
-
-"기내 서비스" 라는 레이블을 예측하는 데 positive한 영향을 준 토큰은 녹색으로, negative한 영향을 준 (즉 라벨 예측에 혼동을 준) 토큰은 붉은 색으로 시각화해 줍니다. 단, 한글 모델의 경우 토큰 시각화가 제대로 출력되지 않는 현상을 겪었습니다. (직관에 부합하지 않는 시각화 결과를 보여주었습니다.)  
+"기내 서비스" 라는 레이블을 예측하는 데 positive한 영향을 준 토큰은 녹색으로, negative한 영향을 준 (즉 라벨 예측에 혼동을 준) 토큰은 붉은 색으로 시각화해 줍니다. 우리의 경우에서는 토큰 시각화가 직관에 다소 부합하지 않는 결과를 보이기도 했으나, 이는 소수 샘플로 인한 특정 토큰의 영향에 의한 것일수도, 한글 토큰의 인코딩의 문제일 수도 있습니다.  
 
 
 
