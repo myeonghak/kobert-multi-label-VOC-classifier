@@ -37,7 +37,7 @@ Contents
 
 <br>
 
-```
+```bash
 .
 ├── data                                          # 모델 학습 및 데모에 사용되는 데이터셋
 ├── KoBERT                                        # 과거 버전의 KoBERT 레포지터리를 클론한 폴더
