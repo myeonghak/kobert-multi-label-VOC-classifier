@@ -33,12 +33,12 @@ Contents
 <br>
 <a id="structure"></a>
 ## Structure  
---------
+--------  
 
 <br>
 
 ```bash
-.
+
 ├── data                                          # 모델 학습 및 데모에 사용되는 데이터셋
 ├── KoBERT                                        # 과거 버전의 KoBERT 레포지터리를 클론한 폴더
 ├── model
@@ -51,6 +51,7 @@ Contents
 │   ├── metrics_for_multilabel.py                 # multilabel 모델 평가를 위한 metrics
 │   └── preprocess.py                             # 전처리 모듈
 └── weights                                       # 학습 모델 가중치
+
 ```
 
 Python 3.7.11 버전에서 구현되었습니다. conda 가상환경을 권장합니다. 사용 패키지는 requirements.txt를 참조해주세요.  
